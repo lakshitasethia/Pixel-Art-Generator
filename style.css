@@ -8,7 +8,10 @@
 body {
   background-color: blueviolet;
 }
-
+.undo, .redo, .reset {
+  padding: 4px 10px;
+  cursor: pointer;
+}
 .reset-button {
   display: flex;
   align-items: center;
