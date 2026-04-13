@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Pixel Art Generator</title>
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
   </head>
   <body>
     <div class="header">
@@ -13,6 +14,17 @@
       <button class="redo">Redo</button>
       <input type="color" value="#00EEFF" name="" id="" class="color-picker" />
       <input type="number" value="30" name="" id="" class="grid-count" />
+      <input type="file" accept="image/*" class="image-upload" />
+      <button class="camera-btn">Camera</button>
+      <button class="download-btn">Download</button>
+    </div>
+
+    <div class="camera-modal">
+      <video class="camera-feed" autoplay playsinline></video>
+      <div class="camera-controls">
+        <button class="capture-btn">Capture</button>
+        <button class="close-camera-btn">Close</button>
+      </div>
     </div>
 
     <div class="container"></div>
